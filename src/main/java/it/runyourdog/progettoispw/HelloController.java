@@ -13,6 +13,7 @@ public class HelloController {
 
     private Stage stage=new Stage();
 
+
     @FXML
     private Button padroneButton;
 
@@ -28,7 +29,7 @@ public class HelloController {
     public void onRegisterNowButtonClicked() throws IOException {
         System.out.println("IL BOTTONE FUNZIONA DANIELE\n");
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("GUI/registrazione.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Scene scene = new Scene(fxmlLoader.load(), 1200, 800);
 
         stage.setScene(scene);
         stage.show();
